@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+	<title>Banana Quest!</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    
+
+</head>
+<body>
+
+    
+<br>
+    
+
+
+
+<div id="content">
+    
+    <p> 
+        <b>Banana Quest: The Potassium Crisis</b>
+
+        In a land known as "Fruitopia," the inhabitants thrived on the delicious and nutritious fruits that grew abundantly. 
+        One fruit, in particular, was highly treasured - the mighty banana. 
+        Fruitopia's inhabitants had always enjoyed the health benefits and energy provided by this potassium-rich treat, 
+        which fueled their daily adventures and brought joy to their lives.
+        
+        But one day, a mysterious phenomenon occurred: the banana crops across Fruitopia began to wither, 
+        and the supply of this essential fruit dwindled rapidly.
+        As the days passed, the once energetic and lively inhabitants of Fruitopia started to feel weak and fatigued. 
+        The doctors and scientists of the land quickly identified the cause - a severe potassium deficiency was spreading among the residents, 
+        and it threatened to plunge Fruitopia into a state of perpetual lethargy.
+        Desperate to restore the health and vitality of their beloved land, 
+        the citizens of Fruitopia are turning to you to help them find 20 bananas.
+        The fate of Fruitopia hangs in the balance.
+        
+        tl;dr: Find 20 bananas to win.
+        
+        If you are willing to undertake this noble quest, please enter your name:</p>
+        
+        <input type="text" id="playerName" placeholder="Enter your name here">
+        <button onclick = "button_pressed();" id = "bp">Start Game</button>
+        
+</div>
+
+<script type="text/javascript" src="main.js"></script>
+<script>
+    let button_pressed = () => {
+        console.log("button pressed");
+        const name = document.getElementById("playerName");
+        if(name){
+            const name_value = name.value;
+            if(name_value){
+                start_pressed(name_value);
+            }
+        }
+    }
+</script>
+</body>
+</html>
